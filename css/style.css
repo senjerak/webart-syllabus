@@ -2,19 +2,19 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #01060c;
+  background-color: #0A0A0A;
   overflow: hidden;
   font-family: ChakraPetch;
 }
 
 
-.temporary{
+.temporary {
   padding: 20%;
   margin: auto;
   text-align: center;
 }
 
-#active{
+#active {
   color: #7992f5 !important;
 }
 
@@ -28,7 +28,7 @@ body {
   position: absolute;
   display: block;
   top: 0;
-  background:#01060c;
+  background: #0A0A0A;
 }
 
 #biblio {
@@ -37,23 +37,63 @@ body {
   padding: 5px;
 }
 
-.sidebarText{
+.sidebarText {
   padding: 5px;
   color: #d6d3d1;
   margin: 0;
 }
 
-
-#logo:hover{
-  text-decoration:underline #7992f5;
+#sbt1 {
+  border: solid 5px #3CC8AB;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  width: 90%;
+  transition: width 1s;
 }
 
-a{
-  text-decoration: none;
+#sbt1:hover {
+  color: #0A0A0A;
+  background-color: #3CC8AB;
+  font-weight: bold;
+  width: 100%;
 }
 
-.ref .sidebarText:hover {
+#sbt2 {
+  border: solid 5px #ED6C80;
+  border-radius: 10px;
+  width: 65%;
+  margin-bottom: 3%;
+  transition: width 1s;
+}
+
+#sbt2:hover {
+  color: #0A0A0A;
+  background-color: #ED6C80;
+  font-weight: bold;
+  width: 75%;
+}
+
+#sbt3 {
+  border: solid 5px #EDBB76;
+  border-radius: 10px;
+  width: 40%;
+  margin-bottom: 3%;
+  transition: width 1s;
+}
+
+#sbt3:hover {
+  color: #0A0A0A;
+  background-color: #EDBB76;
+  font-weight: bold;
+  width: 50%;
+}
+
+#logo:hover {
   color: #7992f5;
+}
+
+a {
+  text-decoration: none;
 }
 
 
@@ -74,28 +114,36 @@ table {
   margin: 2vh 2vh 2vh 2vw;
 }
 
+#infoheader {
+  color: #3CC8AB;
+}
+
+#infoheader2 {
+  color: #EDBB76;
+}
+
 .infomain {
-  margin: 5px;
+  margin: 15px;
   padding: 12px;
-transform: translateX(35%);
+  transform: translateX(52%);
   max-height: 95vh;
-  max-width: 60%;
+  max-width: 50%;
   font-family: ChakraPetch;
   color: #d6d3d1;
-  overflow:auto;
+  overflow: auto;
   overflow-x: hidden;
   position: relative;
   z-index: 5;
 }
 
-.infoGroup{
-  overflow:auto;
+.infoGroup {
+  overflow: auto;
   overflow-x: hidden;
   margin: 2vh 2vh 2vh 23vw;
   width: 75%;
   position: relative;
   z-index: 5;
- max-height: 95vh;
+  max-height: 95vh;
 }
 
 .oddDay {
@@ -105,4 +153,107 @@ transform: translateX(35%);
 @font-face {
   font-family: ChakraPetch;
   src: url(../media/ChakraPetch-Medium.ttf);
+}
+
+.contactcard {
+  background: #1F1F1F;
+  color: #d6d3d1;
+  right: 0;
+  top: 0;
+  position: absolute;
+  margin: 2%;
+  height: 93%;
+  width: 20%;
+  border: solid 5px #3CC8AB;
+  border-radius: 10px;
+  display: block;
+  padding: 1%;
+  text-align: center;
+}
+
+.contactcardinfo {
+  text-align: left;
+}
+
+.externala {
+  height: 35px;
+  width: 35px;
+  padding: 10%;
+  margin: 3%;
+  display: inline-block;
+  border-radius: 5%;
+}
+
+#ext1 {
+  background: url(../media/codepen.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#ext2 {
+  background: url(../media/github.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#ext3 {
+  background: url(../media/linkedin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#ext1:hover{
+  background: url(../media/g1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: ease-in-out 0.5s;
+}
+
+#ext2:hover{
+  background: url(../media/g2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: ease-in-out 0.5s;
+}
+
+#ext3:hover{
+  background: url(../media/g3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: ease-in-out 0.5s;
+}
+
+.contactform {
+  text-align: left;
+}
+
+.ctext {
+  width: 325px;
+  background: #1F1F1F;
+  color: #d6d3d1;
+  border: solid 3px #3CC8AB;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+label {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.csend {
+  width: 325px;
+  background: #1F1F1F;
+  color: #d6d3d1;
+  border: solid 3px #3CC8AB;
+  border-radius: 5px;
+  padding: 1%;
+  transition: letter-spacing 1s;
+}
+
+.csend:hover {
+  background: #3CC8AB;
+  color: #1F1F1F;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
