@@ -1,0 +1,438 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0A0A0A !important;
+  overflow: hidden;
+  font-family: ChakraPetch !important;
+}
+
+.temporary {
+  padding: 20%;
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none !important;
+  color: #5282FF;
+}
+
+a:hover {
+  color: white;
+}
+
+
+
+/* *.·:·.✧ ✦ ✧.·:·.* SIDEBAR *.·:·.✧ ✦ ✧.·:·.* */
+
+
+#active {
+  color: #7992f5 !important;
+}
+
+#sideBar {
+  margin-top: 0;
+  margin-left: 15px;
+  z-index: 1;
+  height: 100vh;
+  width: 25vw;
+  position: absolute;
+  display: block;
+  top: 0;
+  background: #0A0A0A;
+}
+
+#biblio {
+  position: absolute;
+  bottom: 0;
+  padding: 5px !important;
+}
+
+.sidebarText {
+  padding: 5px !important;
+  color: #d6d3d1;
+  margin: 0 !important;
+}
+
+#sbt1 {
+  border: solid 5px #3CC8AB;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  width: 80%;
+  transition: width 1s;
+}
+
+#sbt1:hover {
+  color: #0A0A0A;
+  background-color: #3CC8AB;
+  font-weight: bold;
+  width: 90%;
+}
+
+#sbt2 {
+  border: solid 5px #ED6C80;
+  border-radius: 10px;
+  width: 65%;
+  margin-bottom: 3%;
+  transition: width 1s;
+}
+
+#sbt2:hover {
+  color: #0A0A0A;
+  background-color: #ED6C80;
+  font-weight: bold;
+  width: 75%;
+}
+
+#sbt3 {
+  border: solid 5px #EDBB76;
+  border-radius: 10px;
+  width: 40%;
+  margin-bottom: 3%;
+  transition: width 1s;
+}
+
+#sbt3:hover {
+  color: #0A0A0A;
+  background-color: #EDBB76;
+  font-weight: bold;
+  width: 50%;
+}
+
+#logo:hover {
+  color: #7992f5;
+}
+
+/* *.·:·.✧ ✦ ✧.·:·.* SIDEBAR *.·:·.✧ ✦ ✧.·:·.* */
+
+/* *.·:·.✧ ✦ ✧.·:·.* INFO *.·:·.✧ ✦ ✧.·:·.* */
+
+
+.main {
+  width: 70vw;
+  margin: 2vh 2vh 2vh 2vw;
+}
+
+#infoheader {
+  color: #3CC8AB;
+}
+
+#infoheader2 {
+  color: #EDBB76;
+}
+
+.infomain {
+  margin: 15px;
+  padding: 12px;
+  transform: translateX(52%);
+  max-height: 95vh;
+  max-width: 50%;
+  font-family: ChakraPetch;
+  color: #d6d3d1;
+  overflow: auto;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.oddDay {
+  background-color: grey;
+}
+
+@font-face {
+  font-family: ChakraPetch;
+  src: url(../media/ChakraPetch-Medium.ttf);
+}
+
+/* *.·:·.✧ ✦ ✧.·:·.* INFO/CONTACT *.·:·.✧ ✦ ✧.·:·.* */
+
+.externala {
+  height: 35px;
+  width: 35px;
+  padding: 10%;
+  margin: 3%;
+  display: inline-block;
+  border-radius: 5%;
+}
+
+#ext1 {
+  background: url(../media/codepen.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#ext2 {
+  background: url(../media/github.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#ext3 {
+  background: url(../media/linkedin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#ext1:hover {
+  background: url(../media/g1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: ease-in-out 0.5s;
+}
+
+#ext2:hover {
+  background: url(../media/g2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: ease-in-out 0.5s;
+}
+
+#ext3:hover {
+  background: url(../media/g3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: ease-in-out 0.5s;
+}
+
+.contactcard {
+  background: #1F1F1F;
+  color: #d6d3d1;
+  right: 0;
+  top: 0;
+  position: absolute;
+  margin: 2%;
+  height: 93%;
+  width: 20%;
+  border: solid 5px #3CC8AB;
+  border-radius: 10px;
+  display: block;
+  padding: 1%;
+  text-align: center;
+}
+
+.contactcardinfo {
+  text-align: left;
+}
+
+.contactform {
+  text-align: left;
+  width: 100%;
+}
+
+.ctext {
+  width: 100%;
+  background: #1F1F1F;
+  color: #d6d3d1;
+  border: solid 3px #3CC8AB;
+  border-radius: 5px;
+  padding: auto;
+  display: flex;
+  margin: auto;
+}
+
+label {
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.csend {
+  width: 100%;
+  background: #1F1F1F;
+  color: #d6d3d1;
+  border: solid 3px #3CC8AB;
+  border-radius: 5px;
+  padding: auto;
+  margin-top: 1%;
+  transition: letter-spacing 1s;
+}
+
+.csend:hover {
+  background: #3CC8AB;
+  color: #1F1F1F;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/* *.·:·.✧ ✦ ✧.·:·.* INFO/CONTACT *.·:·.✧ ✦ ✧.·:·.* */
+
+/* *.·:·.✧ ✦ ✧.·:·.* SYLLABUS *.·:·.✧ ✦ ✧.·:·.* */
+
+.infoGroup {
+  overflow: auto;
+  overflow-x: hidden;
+  margin: 2vh 2vh 2vh 23vw;
+  width: 75%;
+  position: relative;
+  z-index: 5;
+  max-height: 95vh;
+}
+
+.accordion-item {
+  background-color: #0A0A0A;
+  border: solid 6px #3CC8AB;
+}
+
+.accordion-button {
+  color: #d6d3d1;
+  background-color: #0A0A0A;
+  border: solid 4px #3CC8AB;
+}
+
+.accordion-header {
+  background-color: #3CC8AB;
+}
+
+.accordion-body {
+  justify-content: center;
+  display: flex;
+}
+
+.accordioncontent {
+  min-width: 50%;
+  max-width: 50%;
+  display: inline-block;
+  margin: 10px;
+  padding: 1%;
+}
+
+table {
+  height: 100%;
+  width: 100%;
+}
+
+td,
+th {
+  color: #d6d3d1;
+}
+
+#tablehead {
+  padding: 1%;
+  color: #3CC8AB;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.tableday {
+  height: 5rem;
+  color: #EDBB76;
+  text-align: center;
+  border-bottom: 3px solid #ddd;
+}
+
+#contentB {
+  background: #1F1F1F;
+}
+
+#contentA {
+  background: #2C2C2C;
+}
+
+.mainc {
+  font-size: large;
+  padding-left: 5%;
+}
+
+.classless {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bolder;
+  height: 100%;
+}
+
+.classless img {
+  height: 10rem;
+}
+
+.tableglow:hover {
+  background-color: #2C2C2C;
+}
+
+#due {
+  color: #ED6C80;
+}
+
+/* #5282FF */
+
+/* *.·:·.✧ ✦ ✧.·:·.* SYLLABUS *.·:·.✧ ✦ ✧.·:·.* */
+
+/* *.·:·.✧ ✦ ✧.·:·.* ASSIGNMENTS *.·:·.✧ ✦ ✧.·:·.* */
+
+
+.gallerybody {
+  height: 95%;
+  Width: 70%;
+  position: absolute;
+  right: 0;
+  margin: 0.5%;
+  margin-top: 1%;
+  margin-right: 2.5%;
+  overflow: auto;
+}
+
+#tocbox {
+  z-index: 5;
+  top: 0;
+  position: sticky;
+  background-color: #0A0A0A;
+  width: 100%;
+  padding: 2%;
+}
+
+#carousel {
+  width: 100%;
+
+}
+
+.gallerycontent {
+  width: 100%;
+  height: 100rem;
+  margin-top: 3%;
+}
+
+.caroimg {
+  max-height: 40rem;
+  width: 100%;
+}
+
+.carousel-caption {
+  display: inline-block;
+  height: 30%;
+  background: rgb(237, 108, 128, 0.7);
+  text-align: left !important;
+  padding: 0% !important;
+  padding-left: 1% !important;
+  position: absolute !important;
+  border-radius: 10px;
+}
+
+#carocap2 {
+  background: rgb(237, 187, 118, 0.7);
+}
+
+#carocap3 {
+  background: rgb(60, 200, 171, 0.7);
+}
+
+.gallrow{
+  display: table;
+ 
+  width: 95%;
+  padding: 2%;
+  margin: 2.5%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 30%;
+}
+
+.gallcolumn{
+  background: blue;
+  float: left;
+  width: 25%;
+  padding: 0;
+  height: 90%;
+  width: 30%;
+  margin: 1.5%;
+  border-radius: 10px;
+}

@@ -1,0 +1,73 @@
+/* 
+- Media Q. Screen VW Guide -
+sm = 640px
+md = 768px
+lg = 1024px
+xl = 1280px
+
+- Mobile -
+sm = 428px
+iphone = 375px
+
+!Smallest To Largest!
+*/
+
+
+@media screen and (max-width: 428px) {
+
+    #biblio {
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    #biblio .sidebarText {
+        font-size: medium;
+        bottom: 0;
+    }
+
+    #biblio #smallt {
+        color: #8f8f8f;
+    }
+
+    #sideBar {
+        width: 100vw;
+    }
+
+
+    /*INFO*/
+
+    .infomain {
+        overflow: auto;
+        overflow-x: hidden;
+        max-height: 55%;
+        max-width: 90%;
+        position: absolute;
+        transform: translateX(0%);
+        bottom: 13%;
+    }
+
+    .contactcard {
+        display: none;
+    }
+
+    /*INFO*/
+
+    /*SYLLABUS*/
+
+    .infoGroup {
+        margin-top: 55%;
+        margin-left: 5%;
+        max-height: 55vh;
+        width: 90%;
+        position: absolute;
+    }
+
+    .accordion-button {
+        width: 100%;
+    }
+
+    /*SYLLABUS*/
+
+}
